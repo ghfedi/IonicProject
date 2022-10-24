@@ -1,0 +1,64 @@
+
+
+<ion-content >
+  <div class="flex-center">
+    <ion-card>
+      <ion-card-header>
+      
+        <ion-card-title color="success">Lost & Found</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+<form >
+    <ion-item>
+      <ion-label position="floating"> Name</ion-label>
+      <ion-input type="text"  [(ngModel)]="name" [ngModelOptions]="{standalone: true}"></ion-input>
+      <ion-icon name="person-circle-outline" slot="end"></ion-icon>
+</ion-item>
+<ion-item>
+  
+  <ion-label position="floating">Email</ion-label>
+  <ion-input type="email" autofocus="on" [(ngModel)]="email" [ngModelOptions]="{standalone: true}"></ion-input>
+  
+  <ion-icon name="mail-outline" slot="end"></ion-icon>
+</ion-item>
+<ion-item>
+
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" [(ngModel)]="password"  [ngModelOptions]="{standalone: true}"></ion-input>
+      <ion-icon name="bag-outline" slot="end"></ion-icon>
+
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Contact</ion-label>
+      <ion-input type="tel" [(ngModel)]="contact" [ngModelOptions]="{standalone: true}"></ion-input>
+      <ion-icon name="call-outline" slot="end" > </ion-icon>
+</ion-item>
+<ion-item>
+
+
+  <ion-radio-group  [(ngModel)]="sexe" [ngModelOptions]="{standalone: true}"slot="start">
+    <ion-list-header>
+      <ion-label>sexe</ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-radio slot="start" value="f" > </ion-radio>
+      <ion-icon name="woman-outline" slot="start"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-radio slot="start" value="m" > </ion-radio>
+      <ion-icon name="man-outline" slot="start"></ion-icon>
+    </ion-item>
+  </ion-radio-group>
+</ion-item>   
+ <ion-button  size="full" class="main-button" (click)="onSubmit()">REGISTER</ion-button>
+ <ion-button  size="clear" color="success"  routerLink="/login"> 
+  <ion-icon name="chevron-back-outline"></ion-icon>
+  login </ion-button>
+</form>
+  </ion-card-content>
+</ion-card>
+  </div>
+
+</ion-content>

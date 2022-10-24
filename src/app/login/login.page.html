@@ -1,0 +1,33 @@
+
+<ion-content >
+  <div class="flex-center">
+    <ion-card>
+      <ion-card-header>
+  
+        <ion-card-title color="success">Lost & Found</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+    <ion-item>
+      
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email"></ion-input> 
+    
+      <ion-icon  slot='end' name="mail-outline"></ion-icon>
+</ion-item>
+<ion-item>
+
+      <ion-label position="floating">Password</ion-label>
+      <ion-icon  slot ='end'name="bag-outline"></ion-icon>
+
+      <ion-input type="password"></ion-input>
+      
+    </ion-item>
+    <ion-button  fill="clear" size="full" color="success">Forget Password</ion-button>
+    <ion-button size="full" class="main-button" routerLink="/home">LOGIN</ion-button>
+    <ion-button  fill="clear" size="full" color="success"  routerLink="/signup" > You dont have an account? REGISTER</ion-button>
+
+  </ion-card-content>
+</ion-card>
+  </div>
+
+</ion-content>

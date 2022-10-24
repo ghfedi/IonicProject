@@ -1,0 +1,77 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="primary" class="backbtn" routerLink="/home" routerDirection="back">
+        <img src="../../assets/back-dark.svg" />
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="search-outline" color="dark"></ion-icon>
+      </ion-button>
+      <ion-button class="notification">
+        <ion-icon name="notifications-outline" color="dark"></ion-icon>
+        <span>&nbsp;</span>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-slides pager="true" class="product-slider">
+    <ion-slide>
+      <img src={{item.image}} />
+    </ion-slide>
+  </ion-slides>
+
+  <div class="ion-padding-vertical">
+    <h1 class="item-name">{{item.name}}</h1>
+
+    <h4 class="price">
+ {{item.age}} 
+     
+    </h4>
+  </div>
+
+  <div class="seperator">
+    <hr>
+  </div>
+
+  <div class="review">
+    <ion-row>
+      <ion-col size="4">
+        <ion-icon name="heart-outline"></ion-icon>
+        200 j'aimes
+      </ion-col>
+      <ion-col size="4">
+      <ion-icon name="arrow-redo-circle-outline"></ion-icon>
+      10 partages
+    </ion-col>
+      <ion-col size="4">
+        <div >560 Reviews</div>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <div class="seperator">
+    <hr>
+  </div>
+
+  <div class="description">
+    <h5 >Status</h5>
+
+    <p>
+      Not Founded
+    </p>
+   
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-row>
+    <ion-col size="15">
+      <ion-button color="light">Add to favorite List <ion-icon  color="danger"name="heart-outline"></ion-icon></ion-button>
+    </ion-col>
+   
+  </ion-row>
+</ion-footer>

@@ -1,0 +1,83 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-buttons class="backbtn" routerLink="/home" routerDirection="back">
+        <img src="../../assets/back-dark.svg" />
+      </ion-buttons>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button class="notification">
+        <ion-icon name="notifications-outline" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content fullscreen="true">
+  <div class="row">
+  <h1 class="title">My annonces
+    <div class="qty-selector">
+      <ion-button shape="round" fill="outline" routerLink="/add-annonce"> <ion-icon name="add-circle-sharp" color ="success" ></ion-icon> </ion-button> 
+    </div> </h1>
+</div>
+  <div class="cart-items">
+    <ion-card mode="ios">
+      <ion-card-content>
+        <div class="item-img">
+          <img src="../../assets/cart/th.jfif" />
+        </div>
+
+        <div class="item-info">
+          <p>Nourra Homri</p>
+          <p>25 ans </p>
+          <p>La Manouba</p>
+
+          <div class="qty-selector">
+            <ion-button shape="round" fill="outline"> <ion-icon  color="success" name="create"></ion-icon></ion-button>
+            <ion-button shape="round" fill="outline"><ion-icon  color="danger" name="trash-outline"></ion-icon></ion-button>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card mode="ios">
+      <ion-card-content>
+        <div class="item-img">
+          <img src="../../assets/cart/dog.jfif" />
+        </div>
+
+        <div class="item-info">
+          <p>Dog Skon</p>
+          <p>2 ans</p>
+          <p>Morneg</p>
+
+          <div class="qty-selector">
+            <ion-button shape="round" fill="outline"> <ion-icon  color="success" name="create"></ion-icon></ion-button>
+            <ion-button shape="round" fill="outline"><ion-icon  color="danger" name="trash-outline"></ion-icon></ion-button>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card mode="ios">
+      <ion-card-content>
+        <div class="item-img">
+          <img src="../../assets/cart/obj1.jfif" />
+        </div>
+
+        <div class="item-info">
+          <p>Fedi Ghribi</p>
+          <p>25 ans</p>
+          <p>La Manouba</p>
+
+          <div class="qty-selector">
+            <ion-button shape="round" fill="outline"> <ion-icon  color="success" name="create"></ion-icon></ion-button>
+            <ion-button shape="round" fill="outline"><ion-icon  color="danger" name="trash-outline"></ion-icon></ion-button>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+<ion-footer translucent="true" class="ion-no-border" mode="md">
+</ion-footer>
